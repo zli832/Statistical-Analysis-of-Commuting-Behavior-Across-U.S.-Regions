@@ -6,11 +6,13 @@
 
 •⁠ Team Members: Lucas Li, Reese Yang, Max Migdon
 
+
 ***💻 Background***
 
 This project investigates how socioeconomic factors—specifically education level, income, and geographical characteristics—influence commuting behaviors in the United States. Using microdata from the IPUMS American Community Survey (ACS), this analysis explores patterns in commute time, travel mode, and work hours across demographic groups.
 
 The goal is to understand the determinants of commuting burden and mobility behavior, which are relevant for urban planning, labor economics, and public policy.
+
 
 ***📊 Project Overview***
 
@@ -39,6 +41,7 @@ Multicollinearity diagnostics show that most Variance Inflation Factors (VIFs) a
 
 Conclusion: Household income, regional location, and commuting patterns are significant predictors of vehicle ownership, while carpooling shows no robust effect.
 
+
 ***📈 Result***
 
 In Model 1, we include the logarithm of household income and a binary variable for sex. The coefficient on log(HHINCOME) is 0.467 (p < 0.01), indicating that a 1% increase in household income is associated with an approximate 0.00467 increase in vehicle ownership. The coefficient on SEX is negative and significant at the 1% level (-0.064), suggesting that households with female respondents tend to own fewer vehicles, holding income constant.
@@ -57,7 +60,8 @@ To check for multicollinearity, we compute Variance Inflation Factors (VIFs). Mo
 
 Overall, the results suggest that household income, regional location, and commuting behavior are significant predictors of vehicle ownership.
 
-*** 🔍Literature Review***
+
+***🔍 Literature Review***
 
 Source 1: https://journals.sagepub.com/doi/10.1177/03611981241233285?icid=int.sj-abstract.citing-articles.1、
 Source 2: https://link.springer.com/article/10.1007/s11116-020-10124-w
@@ -66,6 +70,7 @@ Source 4: https://graphics.wsj.com/urban-income-polarization/
 Source 5: https://www.economist.com/graphic-detail/2017/01/31/how-colleges-affect-social-mobility-in-america
 
 Education, income, and social status play significant roles in shaping commuting behaviors, influencing both the mode of transportation and the duration of commutes. Higher levels of education are often associated with greater job opportunities, which can lead to longer commutes as individuals seek employment in high-paying urban centers (Sage Journals, Springer). Income levels, on the other hand, affect commuting flexibility—wealthier individuals have greater access to private vehicles or premium public transit options, while lower-income workers may face longer, less efficient commutes due to reliance on public transportation and carpooling (WSJ, Economist). Social status and neighborhood income distribution further impact commuting efficiency, with wealthier areas having better infrastructure and transportation networks, whereas lower-income regions often experience inadequate transit options, reinforcing economic disparities (Economist, WSJ). Ultimately, these factors create a commuting landscape where privilege affords convenience, while socioeconomic constraints can exacerbate commuting burdens.
+
 
 ***📫 Contact***
 If you have questions about this project, feel free to reach out:
