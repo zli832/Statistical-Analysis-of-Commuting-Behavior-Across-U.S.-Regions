@@ -21,7 +21,6 @@ Commuting behavior varies widely across individuals. This project answers questi
 The project uses large-scale U.S. microdata to identify statistical patterns and build interpretable models.
 
 
-
 ***Literature Review***
 
 Source 1: https://journals.sagepub.com/doi/10.1177/03611981241233285?icid=int.sj-abstract.citing-articles.1
@@ -36,7 +35,7 @@ Source 5: https://www.economist.com/graphic-detail/2017/01/31/how-colleges-affec
 
 Education, income, and social status play significant roles in shaping commuting behaviors, influencing both the mode of transportation and the duration of commutes. Higher levels of education are often associated with greater job opportunities, which can lead to longer commutes as individuals seek employment in high-paying urban centers (Sage Journals, Springer). Income levels, on the other hand, affect commuting flexibility—wealthier individuals have greater access to private vehicles or premium public transit options, while lower-income workers may face longer, less efficient commutes due to reliance on public transportation and carpooling (WSJ, Economist). Social status and neighborhood income distribution further impact commuting efficiency, with wealthier areas having better infrastructure and transportation networks, whereas lower-income regions often experience inadequate transit options, reinforcing economic disparities (Economist, WSJ). Ultimately, these factors create a commuting landscape where privilege affords convenience, while socioeconomic constraints can exacerbate commuting burdens.
 
-Result
+***Result***
 In Model 1, we include the logarithm of household income and a binary variable for sex. The coefficient on log(HHINCOME) is 0.467 (p < 0.01), indicating that a 1% increase in household income is associated with an approximate 0.00467 increase in vehicle ownership. The coefficient on SEX is negative and significant at the 1% level (-0.064), suggesting that households with female respondents tend to own fewer vehicles, holding income constant.
 
 Model 2 extends the specification by including region fixed effects (Northeast, South, West, with Midwest as the omitted category). Regional variation is statistically significant: compared to the Midwest, households in the Northeast and South own fewer vehicles (coefficients: -0.231 and -0.047, respectively), while households in the West own slightly more (+0.026). All coefficients are statistically significant at the 1% level.
@@ -53,7 +52,7 @@ To check for multicollinearity, we compute Variance Inflation Factors (VIFs). Mo
 
 Overall, the results suggest that household income, regional location, and commuting behavior are significant predictors of vehicle ownership.
 
-###📫 Contact
+***📫 Contact***
 If you have questions about this project, feel free to reach out:
 
 Lucas Li
