@@ -4,7 +4,7 @@
 •⁠ Duration: Feb 2025 - May 2025
 •⁠ Team Members: Lucas Li, Reese Yang, Max Migdon
 
-***💻Background***
+***💻 Background***
 
 This project investigates how socioeconomic factors—specifically education level, income, and geographical characteristics—influence commuting behaviors in the United States. Using microdata from the IPUMS American Community Survey (ACS), this analysis explores patterns in commute time, travel mode, and work hours across demographic groups.
 
@@ -19,7 +19,7 @@ We aim to gain a deeper understanding of these disparities, as this knowledge is
 The project uses large-scale U.S. microdata to identify statistical patterns and build interpretable models.
 
 
-***Exploratory Data Analysis***
+***🧰 Exploratory Data Analysis***
 1. Income Distribution: The income distribution exhibits a bimodal pattern with concentration in two primary ranges. 
 2. Education Distribution: Education attainment shows a right-skewed distribution with high frequency at lower education levels. 
 3. Transit Time Distribution: Transit times follow a multimodal distribution with peak concentrations at 25-30 units and 35-40 units. 
@@ -37,7 +37,7 @@ Multicollinearity diagnostics show that most Variance Inflation Factors (VIFs) a
 
 Conclusion: Household income, regional location, and commuting patterns are significant predictors of vehicle ownership, while carpooling shows no robust effect.
 
-***Result***
+***📈 Result***
 
 In Model 1, we include the logarithm of household income and a binary variable for sex. The coefficient on log(HHINCOME) is 0.467 (p < 0.01), indicating that a 1% increase in household income is associated with an approximate 0.00467 increase in vehicle ownership. The coefficient on SEX is negative and significant at the 1% level (-0.064), suggesting that households with female respondents tend to own fewer vehicles, holding income constant.
 
@@ -55,7 +55,7 @@ To check for multicollinearity, we compute Variance Inflation Factors (VIFs). Mo
 
 Overall, the results suggest that household income, regional location, and commuting behavior are significant predictors of vehicle ownership.
 
-***Literature Review***
+*** 🔍Literature Review***
 
 Source 1: https://journals.sagepub.com/doi/10.1177/03611981241233285?icid=int.sj-abstract.citing-articles.1、
 Source 2: https://link.springer.com/article/10.1007/s11116-020-10124-w
