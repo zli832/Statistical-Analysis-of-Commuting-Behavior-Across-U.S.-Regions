@@ -24,7 +24,7 @@ The project uses large-scale U.S. microdata to identify statistical patterns and
 
 
 ***🧰 Exploratory Data Analysis***
-![Uploading image.png…]()
+<img width="1450" height="1542" alt="image" src="https://github.com/user-attachments/assets/5e335c16-034b-4274-ac5b-1ff00a02a10f" />
 
 1. Income Distribution: The income distribution exhibits a bimodal pattern with concentration in two primary ranges. 
 2. Education Distribution: Education attainment shows a right-skewed distribution with high frequency at lower education levels. 
