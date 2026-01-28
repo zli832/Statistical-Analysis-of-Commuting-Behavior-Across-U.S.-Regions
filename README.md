@@ -33,11 +33,18 @@ The project uses large-scale U.S. microdata to identify statistical patterns and
 5. Vehicles per Household: Vehicle ownership displays a unimodal distribution peaking at 2 vehicles per household.
 6. Carpool Status: The carpool adoption rate shows 88.8% of observations fall in the non-carpool category while only 11.2% represent carpool arrangements, indicating carpooling remains a minority transportation in the US.
 
+<img width="1122" height="938" alt="image" src="https://github.com/user-attachments/assets/d2ad0d48-2d5f-4f03-bbc9-6a146edae905" />
+
 We computed the Pearson correlation matrix for six selected variables related to household characteristics and transportation and visualized the correlations using a heatmap.
 
 The heatmap reveals a positive correlation between vehicle ownership and both household income and commuting time, suggesting that higher-income households and those with longer commutes tend to own more vehicles. Conversely, vehicle ownership is negatively correlated with education level and population density, suggesting that individuals with higher education or those residing in denser areas may rely less on personal vehicles.
 
+<img width="996" height="730" alt="image" src="https://github.com/user-attachments/assets/fe9aab9c-b75f-42fe-89ee-44eef3da3c15" />
+<img width="1048" height="736" alt="image" src="https://github.com/user-attachments/assets/9b002d40-41d0-4c1a-8537-c385ccca9d11" />
+
 We categorized the Region variable into four groups: Northeast, Midwest, South, and West. Histogram analysis suggests that individuals in the South and West are more likely to carpool, while those in the Northeast and South tend to have longer commute times. These patterns are consistent with observed differences in population density across regions. However, due to multicollinearity concerns, we excluded DENSITY from the regression models to avoid distortion in coefficient estimates.
+
+<img width="1328" height="674" alt="image" src="https://github.com/user-attachments/assets/a71355ce-0eb2-483a-b97d-0f4950f25547" />
 
 Multicollinearity diagnostics show that most Variance Inflation Factors (VIFs) are below the standard threshold of 10, though log(HHINCOME) and SEX show moderately elevated VIFs, indicating some collinearity but not enough to undermine the model.
 
@@ -45,12 +52,19 @@ Conclusion: Household income, regional location, and commuting patterns are sign
 
 
 ***📈 Result***
+<img width="1224" height="682" alt="image" src="https://github.com/user-attachments/assets/4ef15412-9b6e-4b0c-a165-ddb5fd11e94f" />
 
 In Model 1, we include the logarithm of household income and a binary variable for sex. The coefficient on log(HHINCOME) is 0.467 (p < 0.01), indicating that a 1% increase in household income is associated with an approximate 0.00467 increase in vehicle ownership. The coefficient on SEX is negative and significant at the 1% level (-0.064), suggesting that households with female respondents tend to own fewer vehicles, holding income constant.
 
+<img width="1226" height="682" alt="image" src="https://github.com/user-attachments/assets/f52587c5-6931-44ab-8d3d-4216ea997f1f" />
+
 Model 2 extends the specification by including region fixed effects (Northeast, South, West, with Midwest as the omitted category). Regional variation is statistically significant: compared to the Midwest, households in the Northeast and South own fewer vehicles (coefficients: -0.231 and -0.047, respectively), while households in the West own slightly more (+0.026). All coefficients are statistically significant at the 1% level.
 
+<img width="1224" height="700" alt="image" src="https://github.com/user-attachments/assets/3e5c8eed-e423-45d1-bf4e-f0775b2b9913" />
+
 In Model 3, we control for commute time (TRANTIME). The coefficient on TRANTIME is small but positive and statistically significant (0.0006, p < 0.01), implying that households with longer average commute times are marginally more likely to own additional vehicles, all else equal.
+
+<img width="1224" height="762" alt="image" src="https://github.com/user-attachments/assets/daaedf0a-e36f-4f48-8fa3-643167fb9402" />
 
 Model 4 includes all prior variables plus a carpooling indicator (CARPOOL). The coefficient on CARPOOL is negative (-0.0046) but not statistically significant (p = 0.145), suggesting that after controlling for income, region, and commute time, carpooling behavior is not a significant predictor of the number of household vehicles.
 
