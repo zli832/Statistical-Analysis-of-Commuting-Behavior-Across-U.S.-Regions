@@ -24,6 +24,8 @@ The project uses large-scale U.S. microdata to identify statistical patterns and
 
 
 ***🧰 Exploratory Data Analysis***
+![Uploading image.png…]()
+
 1. Income Distribution: The income distribution exhibits a bimodal pattern with concentration in two primary ranges. 
 2. Education Distribution: Education attainment shows a right-skewed distribution with high frequency at lower education levels. 
 3. Transit Time Distribution: Transit times follow a multimodal distribution with peak concentrations at 25-30 units and 35-40 units. 
